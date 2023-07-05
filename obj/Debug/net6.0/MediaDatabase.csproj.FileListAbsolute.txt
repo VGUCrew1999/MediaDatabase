@@ -1,0 +1,15 @@
+C:\Users\kenkf\Desktop\CodingProjects\MediaDatabase\bin\Debug\net6.0\MediaDatabase.exe
+C:\Users\kenkf\Desktop\CodingProjects\MediaDatabase\bin\Debug\net6.0\MediaDatabase.deps.json
+C:\Users\kenkf\Desktop\CodingProjects\MediaDatabase\bin\Debug\net6.0\MediaDatabase.runtimeconfig.json
+C:\Users\kenkf\Desktop\CodingProjects\MediaDatabase\bin\Debug\net6.0\MediaDatabase.dll
+C:\Users\kenkf\Desktop\CodingProjects\MediaDatabase\bin\Debug\net6.0\MediaDatabase.pdb
+C:\Users\kenkf\Desktop\CodingProjects\MediaDatabase\obj\Debug\net6.0\MediaDatabase.csproj.AssemblyReference.cache
+C:\Users\kenkf\Desktop\CodingProjects\MediaDatabase\obj\Debug\net6.0\MediaDatabase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kenkf\Desktop\CodingProjects\MediaDatabase\obj\Debug\net6.0\MediaDatabase.AssemblyInfoInputs.cache
+C:\Users\kenkf\Desktop\CodingProjects\MediaDatabase\obj\Debug\net6.0\MediaDatabase.AssemblyInfo.cs
+C:\Users\kenkf\Desktop\CodingProjects\MediaDatabase\obj\Debug\net6.0\MediaDatabase.csproj.CoreCompileInputs.cache
+C:\Users\kenkf\Desktop\CodingProjects\MediaDatabase\obj\Debug\net6.0\MediaDatabase.dll
+C:\Users\kenkf\Desktop\CodingProjects\MediaDatabase\obj\Debug\net6.0\refint\MediaDatabase.dll
+C:\Users\kenkf\Desktop\CodingProjects\MediaDatabase\obj\Debug\net6.0\MediaDatabase.pdb
+C:\Users\kenkf\Desktop\CodingProjects\MediaDatabase\obj\Debug\net6.0\MediaDatabase.genruntimeconfig.cache
+C:\Users\kenkf\Desktop\CodingProjects\MediaDatabase\obj\Debug\net6.0\ref\MediaDatabase.dll
