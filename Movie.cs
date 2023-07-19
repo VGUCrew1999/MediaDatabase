@@ -10,7 +10,7 @@ namespace MediaDatabase
     {
         public string MovieId { get; set; }
         public string MovieName { get; set; }
-        public double LengthHours { get; set; }
+        public int LengthMinutes { get; set; }
         public string Director { get; set; }
         public string Producer { get; set; }
         public DateTime ReleaseDate { get; set; }

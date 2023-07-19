@@ -1,12 +1,15 @@
-﻿using System.Linq.Expressions;
+﻿using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace MediaDatabase
 {
     internal class Program
     {
+        private static MediaContext _context = new MediaContext();
         //main menu
         static void Main(string[] args)
         {
+            _context.Database.EnsureCreated();
             int menuSelection;
             do {
                 Console.WriteLine("Main Menu");
@@ -78,7 +81,7 @@ namespace MediaDatabase
         }
 
         //search menu
-        static void SearchRecords()
+        static async void SearchRecords()
         {
             int menuSelection;
             do
@@ -90,13 +93,24 @@ namespace MediaDatabase
                 Console.WriteLine("4. Search Movies by Code");
                 Console.WriteLine("5. Return to Main Menu");
                 menuSelection = int.Parse(Console.ReadLine());
+                Console.WriteLine();
                 switch (menuSelection)
                 {
                     case 1:
-                        Console.WriteLine("Listed all Video Games");
+                        Console.WriteLine("All Video Games in Database:");
+                        var games = GetAllGames();
+                        foreach(var game in games)
+                        {
+                            Console.WriteLine(game.GameName + " - " + game.GameId);
+                        }
                         break;
                     case 2:
-                        Console.WriteLine("Listed all Movies");
+                        Console.WriteLine("All Movies in Database:");
+                        var movies = GetAllMovies();
+                        foreach (var movie in movies)
+                        {
+                            Console.WriteLine(movie.MovieName + " - " + movie.MovieId);
+                        }
                         break;
                     case 3:
                         Console.WriteLine("Searched for a Video Game");
@@ -185,6 +199,29 @@ namespace MediaDatabase
             Console.WriteLine("Begin Log File----------");
             Console.WriteLine("Printing Log File");
             Console.WriteLine("End Log File------------");
+        }
+
+        //methods for retrieving everything
+        public static List<VideoGame> GetAllGames()
+        {
+            var games = _context.VideoGames.ToList();
+            return games;
+        }
+        public static List<Movie> GetAllMovies()
+        {
+            var movies = _context.Movies.ToList();
+            return movies;
+        }
+
+        //methods for individual search
+        public static void SearchForGame()
+        {
+            var games = GetAllGames();
+        }
+
+        public static void SearchForMovie()
+        {
+            var movies = GetAllMovies();
         }
     }
 }
