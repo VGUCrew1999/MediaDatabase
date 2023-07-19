@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
 
 namespace MediaDatabase
 {
@@ -644,10 +645,28 @@ namespace MediaDatabase
                 switch (menuSelection)
                 {
                     case 1:
-                        Console.WriteLine("Deleted a Video Game");
+                        Console.WriteLine();
+                        VideoGame game = SearchForGame();
+                        if (game != null)
+                        {
+                            DeleteGame(game);
+                        }
+                        else
+                        {
+                            Console.WriteLine("No records deleted.");
+                        }
                         break;
                     case 2:
-                        Console.WriteLine("Deleted a Movie");
+                        Console.WriteLine();
+                        Movie movie = SearchForMovie();
+                        if (movie != null)
+                        {
+                            DeleteMovie(movie);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Editing cancelled.");
+                        }
                         break;
                     case 3:
                         Console.WriteLine("Returning to Main Menu");
@@ -661,6 +680,71 @@ namespace MediaDatabase
             } while (menuSelection != 3);
         }
 
+        //methods for deleting records
+        static void DeleteGame(VideoGame game)
+        {
+            Console.WriteLine("You have selected " + game.GameName + ".");
+            Console.WriteLine("Are you sure you want to delete this game? (y/n)");
+            var delete = Console.ReadLine().ToLower();
+            while(!delete.StartsWith("y")  && !delete.EndsWith("n"))
+            {
+                Console.WriteLine("Invalid input. Please try again");
+                Console.WriteLine("You have selected " + game.GameName + ".");
+                Console.WriteLine("Are you sure you want to delete this game? (y/n)");
+                delete = Console.ReadLine().ToLower();
+            }
+            if (delete.StartsWith("y"))
+            {
+                try
+                {
+                    _context.VideoGames.Remove(game);
+                    _context.SaveChanges();
+                    Console.WriteLine(game.GameName + " was deleted from the Database.");
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine("Error while updating the Database. Please try again.");
+                }
+                
+            }
+            else
+            {
+                Console.WriteLine(game.GameName + " was not deleted.");
+            }
+
+        }
+
+        static void DeleteMovie(Movie movie)
+        {
+            Console.WriteLine("You have selected " + movie.MovieName + ".");
+            Console.WriteLine("Are you sure you want to delete this movie? (y/n)");
+            var delete = Console.ReadLine().ToLower();
+            while (!delete.StartsWith("y") && !delete.EndsWith("n"))
+            {
+                Console.WriteLine("Invalid input. Please try again");
+                Console.WriteLine("You have selected " + movie.MovieName + ".");
+                Console.WriteLine("Are you sure you want to delete this movie? (y/n)");
+                delete = Console.ReadLine().ToLower();
+            }
+            if (delete.StartsWith("y"))
+            {
+                try
+                {
+                    _context.Movies.Remove(movie);
+                    _context.SaveChanges();
+                    Console.WriteLine(movie.MovieName + " was deleted from the Database.");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error while updating the Database. Please try again.");
+                }
+
+            }
+            else
+            {
+                Console.WriteLine(movie.MovieName + " was not deleted.");
+            }
+        }
 
         //log menu
         static void ViewLogFile()
