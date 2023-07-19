@@ -44,7 +44,7 @@ namespace MediaDatabase
                         Console.WriteLine("Invalid Input. Please try again.");
                         break;
                 }
-
+                Console.WriteLine();
 
             }while(menuSelection != 6);
         }
@@ -63,10 +63,10 @@ namespace MediaDatabase
                 switch (menuSelection)
                 {
                     case 1:
-                        Console.WriteLine("Added a Video Game");
+                        AddGames();
                         break;
                     case 2:
-                        Console.WriteLine("Added a Movie");
+                        AddMovies();
                         break;
                     case 3:
                         Console.WriteLine("Returning to Main Menu");
@@ -80,8 +80,83 @@ namespace MediaDatabase
             } while (menuSelection != 3);
         }
 
+        //methods to add records
+        static void AddGames()
+        {
+            //collect information from user
+            VideoGame newGame = new VideoGame();
+            Console.WriteLine("Enter the game's name:");
+            newGame.GameName = Console.ReadLine();
+            Console.WriteLine("Enter the game's id:");
+            newGame.GameId = Console.ReadLine();
+            Console.WriteLine("Enter the console the game is for:");
+            newGame.Console = Console.ReadLine();
+            Console.WriteLine("Enter the game's primary developer:");
+            newGame.Developer = Console.ReadLine();
+            Console.WriteLine("Enter the game's primary publisher:");
+            newGame.Publisher = Console.ReadLine();
+            Console.WriteLine("Enter the year for the game's release date:");
+            var year = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the month for the game's release date:");
+            var month = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the day for the game's release date:");
+            var day = int.Parse(Console.ReadLine());
+            DateTime date = new DateTime(year, month, day);
+            newGame.ReleaseDate = date;
+            newGame.DateAdded = DateTime.Today;
+
+            //adding to database and error handling
+            try
+            {
+                _context.VideoGames.Add(newGame);
+                _context.SaveChanges();
+                Console.WriteLine("Video Game added to database");
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Error adding to database. Please try again.");
+            }
+        }
+        static void AddMovies()
+        {
+            //collect information from user
+            Movie newMovie = new Movie();
+            Console.WriteLine("Enter the movie's name:");
+            newMovie.MovieName = Console.ReadLine();
+            Console.WriteLine("Enter the movie's id:");
+            newMovie.MovieId = Console.ReadLine();
+            Console.WriteLine("Enter the length of the movie in minutes:");
+            newMovie.LengthMinutes = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the movie's primary director:");
+            newMovie.Director = Console.ReadLine();
+            Console.WriteLine("Enter the movie's primary producer:");
+            newMovie.Producer = Console.ReadLine();
+            Console.WriteLine("Enter the year for the movie's release date:");
+            var year = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the month for the movie's release date:");
+            var month = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the day for the movie's release date:");
+            var day = int.Parse(Console.ReadLine());
+            DateTime date = new DateTime(year, month, day);
+            newMovie.ReleaseDate = date;
+            newMovie.DateAdded = DateTime.Today;
+
+            //adding to database and error handling
+            try
+            {
+                _context.Movies.Add(newMovie);
+                _context.SaveChanges();
+                Console.WriteLine("Movie added to Database.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error adding to Database. Please try again.");
+            }
+            Console.WriteLine();
+        }
+
         //search menu
-        static async void SearchRecords()
+        static void SearchRecords()
         {
             int menuSelection;
             do
@@ -113,10 +188,10 @@ namespace MediaDatabase
                         }
                         break;
                     case 3:
-                        Console.WriteLine("Searched for a Video Game");
+                        SearchForGame();
                         break;
                     case 4:
-                        Console.WriteLine("Searched for a Movie");
+                        SearchForMovie();
                         break;
                     case 5:
                         Console.WriteLine("Returning to Main Menu");
@@ -128,6 +203,7 @@ namespace MediaDatabase
 
 
             } while (menuSelection != 5);
+            Console.WriteLine();
         }
 
         //edit menu
@@ -217,11 +293,99 @@ namespace MediaDatabase
         public static void SearchForGame()
         {
             var games = GetAllGames();
+            var continueSearch = "";
+            do
+            {
+                Console.WriteLine("Please enter a Game Id to search for: ");
+                var gameId = Console.ReadLine();
+                var selectedGame = new VideoGame();
+
+                //catch and prevent any errors
+                try
+                {
+                    selectedGame = games.Single(g => g.GameId == gameId.ToUpper());
+                }
+                catch(Exception Ex)
+                {
+                    selectedGame = null; // set to null if not found
+                }
+
+                // print data if found or give not found
+                if(selectedGame == null)
+                {
+                    Console.WriteLine("Video Game not in Database.");
+                }
+                else
+                {
+                    Console.WriteLine("Game Id: " + selectedGame.GameId);
+                    Console.WriteLine("Game Name: " + selectedGame.GameName);
+                    Console.WriteLine("Console: " + selectedGame.Console);
+                    Console.WriteLine("Primary Developer: " + selectedGame.Developer);
+                    Console.WriteLine("Primary Publisher: " + selectedGame.Publisher);
+                    Console.WriteLine("Release Date: " + selectedGame.ReleaseDate);
+                    Console.WriteLine("Date added to Database: " + selectedGame.DateAdded);
+                    Console.ReadLine();
+                }
+                Console.WriteLine("Would you like to continue searching?(y/n)");
+                continueSearch = Console.ReadLine();
+                while (!continueSearch.ToLower().StartsWith("n") && !continueSearch.ToLower().StartsWith("y"))
+                {
+                    Console.WriteLine("Invalid input. Please try again.");
+                    Console.WriteLine("Would you like to continue searching?(y/n)");
+                    continueSearch = Console.ReadLine();
+                }
+                Console.WriteLine();
+
+            } while (!continueSearch.ToLower().StartsWith("n"));
         }
 
         public static void SearchForMovie()
         {
             var movies = GetAllMovies();
+            var continueSearch = "";
+            do
+            {
+                Console.WriteLine("Please enter a Movie Id to search for: ");
+                var movieId = Console.ReadLine();
+                var selectedMovie = new Movie();
+
+                // catch and prevent any errors
+                try
+                {
+                    selectedMovie = movies.Single(m => m.MovieId == movieId.ToUpper());
+                }
+                catch(Exception ex)
+                {
+                    selectedMovie = null; // set to null if not found
+                }
+
+                // print data if found or give not found
+                if (selectedMovie == null)
+                {
+                    Console.WriteLine("Movie not in Database.");
+                }
+                else
+                {
+                    Console.WriteLine("Movie Id: " + selectedMovie.MovieId);
+                    Console.WriteLine("Movie Name: " + selectedMovie.MovieName);
+                    Console.WriteLine("Length in Minutes: " + selectedMovie.LengthMinutes);
+                    Console.WriteLine("Primary Director: " + selectedMovie.Director);
+                    Console.WriteLine("Primary Producer: " + selectedMovie.Producer);
+                    Console.WriteLine("Release Date: " + selectedMovie.ReleaseDate);
+                    Console.WriteLine("Date added to Database: " + selectedMovie.DateAdded);
+                    Console.ReadLine();
+                }
+                Console.WriteLine("Would you like to continue searching?(y/n)");
+                continueSearch = Console.ReadLine();
+                while (!continueSearch.ToLower().StartsWith("n") && !continueSearch.ToLower().StartsWith("y"))
+                {
+                    Console.WriteLine("Invalid input. Please try again.");
+                    Console.WriteLine("Would you like to continue searching?(y/n)");
+                    continueSearch = Console.ReadLine();
+                }
+                Console.WriteLine();
+
+            } while (!continueSearch.ToLower().StartsWith("n"));
         }
     }
 }
