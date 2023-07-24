@@ -1,0 +1,41 @@
+7/24/2023 2:29:37 PM The new game was added to the database.
+7/24/2023 2:37:24 PM The new game was added to the database.
+7/24/2023 2:37:25 PM The new movie was added to the database.
+7/24/2023 2:44:26 PM The new movie was added to the database.
+7/24/2023 2:44:26 PM The new game was added to the database.
+7/24/2023 2:55:56 PM An error occured while adding the game to the database.
+7/24/2023 2:55:57 PM An error occured while adding the game to the database.
+7/24/2023 2:55:57 PM An error occured while deleting Edited Unit Test Game from database.
+7/24/2023 2:55:57 PM An error occured while deleting Unit Test Movie from database.
+7/24/2023 2:55:57 PM An error occured while updating data for Unit Test Movie.
+7/24/2023 2:55:57 PM An error occured while updating data for Edited Unit Test Game.
+7/24/2023 2:59:56 PM An error occured while adding the game to the database.
+7/24/2023 2:59:57 PM An error occured while adding the game to the database.
+7/24/2023 2:59:57 PM An error occured while deleting Edited Unit Test Game from database.
+7/24/2023 2:59:57 PM An error occured while deleting Unit Test Movie from database.
+7/24/2023 2:59:57 PM An error occured while updating data for Edited Unit Test Movie.
+7/24/2023 2:59:57 PM An error occured while updating data for Edited Unit Test Game.
+7/24/2023 3:02:06 PM The new movie was added to the database.
+7/24/2023 3:02:06 PM The new game was added to the database.
+7/24/2023 3:02:06 PM An error occured while updating data for Edited Unit Test Movie.
+7/24/2023 3:02:06 PM An error occured while updating data for Edited Unit Test Game.
+7/24/2023 3:02:06 PM An error occured while deleting Edited Unit Test Game from database.
+7/24/2023 3:02:06 PM An error occured while deleting EditedUnit Test Movie from database.
+7/24/2023 3:08:57 PM The new movie was added to the database.
+7/24/2023 3:08:57 PM The new game was added to the database.
+7/24/2023 3:08:57 PM Successfully updated data for Edited Unit Test Movie.
+7/24/2023 3:08:57 PM An error occured while updating data for Edited Unit Test Game.
+7/24/2023 3:08:57 PM An error occured while deleting Edited Unit Test Game from database.
+7/24/2023 3:08:57 PM An error occured while deleting Edited Unit Test Movie from database.
+7/24/2023 3:11:38 PM The new movie was added to the database.
+7/24/2023 3:11:38 PM The new game was added to the database.
+7/24/2023 3:11:38 PM Successfully updated data for Edited Unit Test Movie.
+7/24/2023 3:11:38 PM Successfully updated data for Edited Unit Test Game.
+7/24/2023 3:11:38 PM Deleted Edited Unit Test Game from database.
+7/24/2023 3:11:38 PM Deleted Edited Unit Test Movie from database.
+7/24/2023 3:23:00 PM The new movie was added to the database.
+7/24/2023 3:23:01 PM The new game was added to the database.
+7/24/2023 3:23:01 PM Successfully updated data for Edited Unit Test Movie.
+7/24/2023 3:23:01 PM Successfully updated data for Edited Unit Test Game.
+7/24/2023 3:23:01 PM Deleted Edited Unit Test Game from database.
+7/24/2023 3:23:01 PM Deleted Edited Unit Test Movie from database.
