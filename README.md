@@ -14,9 +14,9 @@ Now, open the Visual Studio solution and update the connection string under Medi
 The original planned features were: log file, a generic class, the project would be asynchronous, 3 or more unit tests.
 The current planned features are: log file, 3 or more unit tests and a list populated with values and used in the program.
 
-Log file - external file tracking user input, important events and errors. it can also be printed to the user
-Unit tests - currently not implemented yet
-List of values - a list of video games used in the search function, along with a list of movies used in the same way
+Log file - external file tracking user input, important events and errors. it can also be printed to the user.
+Unit tests - 6 in total, testing adding, editing, and deleting a movie and a game.
+List of values - a list of video games used in the search function, along with a list of movies used in the same way.
 
 #How the menu works
 
