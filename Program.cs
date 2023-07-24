@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Azure.Core;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query.Internal;
 using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
 
@@ -120,20 +122,7 @@ namespace MediaDatabase
                 Console.WriteLine("An error has occured while entering data. Please try again.");
                 newGame = null;
             }
-            
-            if(newGame != null)
-            {
-                try
-                {
-                    _context.VideoGames.Add(newGame);
-                    _context.SaveChanges();
-                    Console.WriteLine("Video Game added to database");
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error adding to database. Please try again.");
-                }
-            } 
+            AddGame(newGame);
         }
         static void AddMovies()
         {
@@ -165,13 +154,34 @@ namespace MediaDatabase
                 Console.WriteLine("An error has occured while entering data. Please try again.");
                 newMovie = null;
             }
-            
-            if(newMovie != null)
+            AddMovie(newMovie);
+        }
+
+        //add methods that can skip input phase for automation
+        static void AddGame(VideoGame game)
+        {
+            if (game != null)
+            {
+                try
+                {
+                    _context.VideoGames.Add(game);
+                    _context.SaveChanges();
+                    Console.WriteLine("Video Game added to database");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error adding to database. Please try again.");
+                }
+            }
+        }
+        static void AddMovie(Movie movie)
+        {
+            if (movie != null)
             {
                 //adding to database and error handling
                 try
                 {
-                    _context.Movies.Add(newMovie);
+                    _context.Movies.Add(movie);
                     _context.SaveChanges();
                     Console.WriteLine("Movie added to Database.");
                 }
@@ -181,9 +191,7 @@ namespace MediaDatabase
                 }
                 Console.WriteLine();
             }
-
         }
-
 
         //search menu
         static void SearchRecords()
@@ -695,17 +703,7 @@ namespace MediaDatabase
             }
             if (delete.StartsWith("y"))
             {
-                try
-                {
-                    _context.VideoGames.Remove(game);
-                    _context.SaveChanges();
-                    Console.WriteLine(game.GameName + " was deleted from the Database.");
-                }
-                catch(Exception ex)
-                {
-                    Console.WriteLine("Error while updating the Database. Please try again.");
-                }
-                
+                ConfirmDeleteGame(game);
             }
             else
             {
@@ -713,7 +711,6 @@ namespace MediaDatabase
             }
 
         }
-
         static void DeleteMovie(Movie movie)
         {
             Console.WriteLine("You have selected " + movie.MovieName + ".");
@@ -728,21 +725,40 @@ namespace MediaDatabase
             }
             if (delete.StartsWith("y"))
             {
-                try
-                {
-                    _context.Movies.Remove(movie);
-                    _context.SaveChanges();
-                    Console.WriteLine(movie.MovieName + " was deleted from the Database.");
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error while updating the Database. Please try again.");
-                }
-
+                ConfirmDeleteMovie(movie);
             }
             else
             {
                 Console.WriteLine(movie.MovieName + " was not deleted.");
+            }
+        }
+
+        //delete methods that can skip input phase for automation
+        static void ConfirmDeleteGame(VideoGame game)
+        {
+            try
+            {
+                _context.VideoGames.Remove(game);
+                _context.SaveChanges();
+                Console.WriteLine(game.GameName + " was deleted from the Database.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error while updating the Database. Please try again.");
+            }
+
+        }
+        static void ConfirmDeleteMovie(Movie movie)
+        {
+            try
+            {
+                _context.Movies.Remove(movie);
+                _context.SaveChanges();
+                Console.WriteLine(movie.MovieName + " was deleted from the Database.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error while updating the Database. Please try again.");
             }
         }
 
