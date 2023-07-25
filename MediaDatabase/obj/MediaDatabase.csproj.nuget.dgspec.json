@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kenkf\\Desktop\\MediaDatabaseV2\\MediaDatabase\\MediaDatabase.csproj": {}
+    "C:\\Users\\Kenny Fugate\\Desktop\\MediaDatabase\\MediaDatabase\\MediaDatabase.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kenkf\\Desktop\\MediaDatabaseV2\\MediaDatabase\\MediaDatabase.csproj": {
+    "C:\\Users\\Kenny Fugate\\Desktop\\MediaDatabase\\MediaDatabase\\MediaDatabase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenkf\\Desktop\\MediaDatabaseV2\\MediaDatabase\\MediaDatabase.csproj",
+        "projectUniqueName": "C:\\Users\\Kenny Fugate\\Desktop\\MediaDatabase\\MediaDatabase\\MediaDatabase.csproj",
         "projectName": "MediaDatabase",
-        "projectPath": "C:\\Users\\kenkf\\Desktop\\MediaDatabaseV2\\MediaDatabase\\MediaDatabase.csproj",
-        "packagesPath": "C:\\Users\\kenkf\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenkf\\Desktop\\MediaDatabaseV2\\MediaDatabase\\obj\\",
+        "projectPath": "C:\\Users\\Kenny Fugate\\Desktop\\MediaDatabase\\MediaDatabase\\MediaDatabase.csproj",
+        "packagesPath": "C:\\Users\\Kenny Fugate\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kenny Fugate\\Desktop\\MediaDatabase\\MediaDatabase\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kenkf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kenny Fugate\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

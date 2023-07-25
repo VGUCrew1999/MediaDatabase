@@ -12,6 +12,7 @@ namespace MediaDatabase
     internal class Program
     {
         private static MediaContext _context = new MediaContext();
+
         //main menu
         static void Main(string[] args)
         {
@@ -167,6 +168,7 @@ namespace MediaDatabase
             }
             AddGame(newGame);
         }
+
         public static void AddMovies()
         {
             Movie newMovie = new Movie();
@@ -245,6 +247,7 @@ namespace MediaDatabase
                 WriteToLog(logText);
             }
         }
+
         public static void AddMovie(Movie movie)
         {
             string logText = "";
@@ -373,12 +376,14 @@ namespace MediaDatabase
 
             } while (menuSelection != 5);
         }
+
         //methods for retrieving everything
         public static List<VideoGame> GetAllGames()
         {
             var games = _context.VideoGames.ToList();
             return games;
         }
+
         public static List<Movie> GetAllMovies()
         {
             var movies = _context.Movies.ToList();
@@ -582,6 +587,7 @@ namespace MediaDatabase
             logText = DateTime.Now + " Exited the Edit Records Menu.";
             WriteToLog(logText);
         }
+
         //methods to edit records
         public static void EditGame(VideoGame game)
         {
@@ -913,6 +919,7 @@ namespace MediaDatabase
             WriteToLog(logText);
             Console.WriteLine();
         }
+
         public static void DeleteMovie(Movie movie)
         {
             String logText = DateTime.Now +  " Entered the Delete Movie Menu.";
@@ -967,6 +974,7 @@ namespace MediaDatabase
             }
 
         }
+
         public static void ConfirmDeleteMovie(Movie movie)
         {
             string logText = "";
@@ -1007,6 +1015,7 @@ namespace MediaDatabase
             Console.WriteLine("----------------------");
             Console.WriteLine("End of Log File.");
             Console.WriteLine();
+            Console.ReadLine();
         }
 
         //writing to log file

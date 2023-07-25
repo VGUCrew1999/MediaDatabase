@@ -10,6 +10,7 @@ namespace MediaDatabase
     internal class MediaContext : DbContext
     {
         public DbSet<VideoGame> VideoGames { get; set; }
+
         public DbSet<Movie> Movies { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -39,3 +39,15 @@
 7/24/2023 3:23:01 PM Successfully updated data for Edited Unit Test Game.
 7/24/2023 3:23:01 PM Deleted Edited Unit Test Game from database.
 7/24/2023 3:23:01 PM Deleted Edited Unit Test Movie from database.
+7/25/2023 7:23:55 PM The new movie was added to the database.
+7/25/2023 7:23:55 PM The new game was added to the database.
+7/25/2023 7:23:55 PM Successfully updated data for Edited Unit Test Movie.
+7/25/2023 7:23:55 PM Successfully updated data for Edited Unit Test Game.
+7/25/2023 7:23:55 PM Deleted Edited Unit Test Game from database.
+7/25/2023 7:23:55 PM Deleted Edited Unit Test Movie from database.
+7/25/2023 7:33:38 PM The new movie was added to the database.
+7/25/2023 7:33:39 PM The new game was added to the database.
+7/25/2023 7:33:39 PM Successfully updated data for Edited Unit Test Movie.
+7/25/2023 7:33:39 PM Successfully updated data for Edited Unit Test Game.
+7/25/2023 7:33:39 PM Deleted Edited Unit Test Game from database.
+7/25/2023 7:33:39 PM Deleted Edited Unit Test Movie from database.
