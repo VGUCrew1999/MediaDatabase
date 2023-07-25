@@ -24,5 +24,5 @@ The menu used in this program is in the console. It will list the available opti
 Example: Enter 1 to go the add records menu, or 5 to view the log file contents.
 When searching or editing a record, it will give prompts on what to enter (a name, a year, etc). It will also tell if an error occurs.
 
-#noted about the log file
+#notes about the log file
 The default location for it is in the bin -> debug -> net6.0 folder. It will timestamp every message and will list what menus it entered/exited, user input and actions, and tell if an error has occured. The location can be updated by editing the GetFilePath() method.
