@@ -51,3 +51,9 @@
 7/25/2023 7:33:39 PM Successfully updated data for Edited Unit Test Game.
 7/25/2023 7:33:39 PM Deleted Edited Unit Test Game from database.
 7/25/2023 7:33:39 PM Deleted Edited Unit Test Movie from database.
+7/26/2023 7:36:41 PM The new movie was added to the database.
+7/26/2023 7:36:42 PM The new game was added to the database.
+7/26/2023 7:36:42 PM Successfully updated data for Edited Unit Test Movie.
+7/26/2023 7:36:42 PM Successfully updated data for Edited Unit Test Game.
+7/26/2023 7:36:42 PM Deleted Edited Unit Test Game from database.
+7/26/2023 7:36:42 PM Deleted Edited Unit Test Movie from database.

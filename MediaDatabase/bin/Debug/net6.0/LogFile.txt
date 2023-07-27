@@ -281,3 +281,167 @@
 7/25/2023 7:32:43 PM Exited the Delete Records Menu.
 7/25/2023 7:32:51 PM Printed the Log File.
 7/25/2023 7:33:24 PM Exited the program.
+7/26/2023 7:29:41 PM Started the program.
+7/26/2023 7:29:47 PM Entered the Search Records Menu.
+7/26/2023 7:29:54 PM Printed all games.
+7/26/2023 7:30:02 PM Printed all movies.
+7/26/2023 7:30:14 PM Entered the Search For Game Menu.
+7/26/2023 7:30:18 PM Selected The Legend of Zelda: Ocarina of Time in search menu.
+7/26/2023 7:30:24 PM Exited Search For Game Menu.
+7/26/2023 7:30:24 PM Printed data for The Legend of Zelda: Ocarina of Time.
+7/26/2023 7:30:32 PM Printed all movies.
+7/26/2023 7:30:37 PM Entered the Search For Movie Menu.
+7/26/2023 7:30:43 PM Entered an invalid movie id.
+7/26/2023 7:30:47 PM Exited Search For Movie Menu.
+7/26/2023 7:30:47 PM Printed no movie data.
+7/26/2023 7:30:51 PM Entered the Search For Movie Menu.
+7/26/2023 7:30:53 PM Selected The Super Mario Bros. Movie in search menu.
+7/26/2023 7:30:55 PM Exited Search For Movie Menu.
+7/26/2023 7:30:55 PM Printed data for The Super Mario Bros. Movie.
+7/26/2023 7:31:04 PM Exited the Search Records Menu.
+7/26/2023 7:31:08 PM Entered the Add Records Menu.
+7/26/2023 7:31:11 PM Entered the Add Games Menu.
+7/26/2023 7:31:11 PM Began adding a new game.
+7/26/2023 7:31:14 PM Entered test game as the game's name.
+7/26/2023 7:31:18 PM Entered TESTVG as the game's id.
+7/26/2023 7:31:20 PM entered test as the game's console.
+7/26/2023 7:31:21 PM Entered test as the game's primary developer.
+7/26/2023 7:31:23 PM Entered test as the game's primary publisher.
+7/26/2023 7:31:33 PM Entered 5/23/2000 12:00:00 AM as the game's release dat.
+7/26/2023 7:31:34 PM The new game was added to the database.
+7/26/2023 7:31:37 PM Exited the Add Records Menu.
+7/26/2023 7:31:38 PM Entered the Search Records Menu.
+7/26/2023 7:31:40 PM Printed all games.
+7/26/2023 7:31:53 PM Exited the Search Records Menu.
+7/26/2023 7:32:00 PM Printed the Log File.
+7/26/2023 7:33:36 PM Exited the program.
+7/27/2023 12:25:15 PM Started the program.
+7/27/2023 12:25:19 PM Entered the Search Records Menu.
+7/27/2023 12:25:20 PM Printed all games.
+7/27/2023 12:25:23 PM Printed all movies.
+7/27/2023 12:25:26 PM Entered the Search For Game Menu.
+7/27/2023 12:25:28 PM Selected Star Fox Adventures in search menu.
+7/27/2023 12:25:30 PM Exited Search For Game Menu.
+7/27/2023 12:25:30 PM Printed data for Star Fox Adventures.
+7/27/2023 12:25:37 PM Exited the Search Records Menu.
+7/27/2023 12:25:41 PM Entered the Edit Records Menu.
+7/27/2023 12:25:43 PM Entered the Search For Game Menu.
+7/27/2023 12:25:45 PM Selected test game in search menu.
+7/27/2023 12:25:46 PM Exited Search For Game Menu.
+7/27/2023 12:25:46 PM Entered the Edit Game Menu with test game.
+7/27/2023 12:25:48 PM Entered the Edit Text Menu
+7/27/2023 12:25:51 PM Changed the Console from test to edit test.
+7/27/2023 12:25:51 PM Exited the Edit Text Menu
+7/27/2023 12:25:55 PM Entered the Edit Text Menu
+7/27/2023 12:25:58 PM Changed the Primary Publisher from test to update test.
+7/27/2023 12:25:58 PM Exited the Edit Text Menu
+7/27/2023 12:26:00 PM Successfully updated data for test game.
+7/27/2023 12:26:00 PM Confirmed Edits for test game.
+7/27/2023 12:26:00 PM Exited the Edit Game Menu
+7/27/2023 12:26:01 PM Exited the Edit Records Menu.
+7/27/2023 12:26:01 PM Exited the Edit Records Menu.
+7/27/2023 12:26:03 PM Entered the Search Records Menu.
+7/27/2023 12:26:05 PM Entered the Search For Game Menu.
+7/27/2023 12:26:07 PM Selected test game in search menu.
+7/27/2023 12:26:08 PM Exited Search For Game Menu.
+7/27/2023 12:26:08 PM Printed data for test game.
+7/27/2023 12:26:11 PM Exited the Search Records Menu.
+7/27/2023 12:26:13 PM Entered the Delete Records Menu.
+7/27/2023 12:26:14 PM Entered the Search For Game Menu.
+7/27/2023 12:26:17 PM Selected test game in search menu.
+7/27/2023 12:26:18 PM Exited Search For Game Menu.
+7/27/2023 12:26:18 PM Selected test game for deletion.
+7/27/2023 12:26:18 PM Entered the Delete Game Menu.
+7/27/2023 12:26:20 PM Decided to delete test game.
+7/27/2023 12:26:20 PM Deleted test game from database.
+7/27/2023 12:26:20 PM Exited the Delete Game Menu.
+7/27/2023 12:26:21 PM Exited the Delete Records Menu.
+7/27/2023 12:26:23 PM Entered the Search Records Menu.
+7/27/2023 12:26:25 PM Printed all games.
+7/27/2023 12:26:29 PM Exited the Search Records Menu.
+7/27/2023 12:26:30 PM Exited the program.
+7/27/2023 12:53:44 PM Started the program.
+7/27/2023 12:53:47 PM Entered the Add Records Menu.
+7/27/2023 12:53:48 PM Entered the Add Games Menu.
+7/27/2023 12:53:48 PM Began adding a new game.
+7/27/2023 12:53:51 PM Entered test game as the game's name.
+7/27/2023 12:53:53 PM Entered TESTVG as the game's id.
+7/27/2023 12:53:55 PM entered test as the game's console.
+7/27/2023 12:53:56 PM Entered test as the game's primary developer.
+7/27/2023 12:53:57 PM Entered test as the game's primary publisher.
+7/27/2023 12:54:00 PM Entered 1/1/2023 12:00:00 AM as the game's release dat.
+7/27/2023 12:54:01 PM The new game was added to the database.
+7/27/2023 12:54:02 PM Entered the Add Movies Menu.
+7/27/2023 12:54:02 PM Began adding a new movie.
+7/27/2023 12:54:07 PM Entered test movie as the movie's name.
+7/27/2023 12:54:08 PM Entered TESTMV as the movie's id.
+7/27/2023 12:54:11 PM Entered 57 as the movie's length in minutes.
+7/27/2023 12:54:13 PM Entered test as the movie's primary director.
+7/27/2023 12:54:15 PM Entered test as the movie's primary producer.
+7/27/2023 12:54:18 PM Entered 1/1/2023 12:00:00 AM as the movie's release date.
+7/27/2023 12:54:18 PM The new movie was added to the database.
+7/27/2023 12:54:19 PM Exited the Add Records Menu.
+7/27/2023 12:54:20 PM Entered the Search Records Menu.
+7/27/2023 12:54:21 PM Printed all games.
+7/27/2023 12:54:23 PM Printed all movies.
+7/27/2023 12:54:26 PM Entered the Search For Game Menu.
+7/27/2023 12:54:28 PM Selected test game in search menu.
+7/27/2023 12:54:29 PM Exited Search For Game Menu.
+7/27/2023 12:54:29 PM Printed data for test game.
+7/27/2023 12:54:34 PM Entered the Search For Movie Menu.
+7/27/2023 12:54:36 PM Selected test movie in search menu.
+7/27/2023 12:54:37 PM Exited Search For Movie Menu.
+7/27/2023 12:54:37 PM Printed data for test movie.
+7/27/2023 12:54:39 PM Exited the Search Records Menu.
+7/27/2023 12:54:41 PM Entered the Edit Records Menu.
+7/27/2023 12:54:41 PM Entered the Search For Game Menu.
+7/27/2023 12:54:44 PM Selected test game in search menu.
+7/27/2023 12:54:45 PM Exited Search For Game Menu.
+7/27/2023 12:54:45 PM Entered the Edit Game Menu with test game.
+7/27/2023 12:54:47 PM Entered the Edit Text Menu
+7/27/2023 12:54:51 PM Changed the Console from test to don't care.
+7/27/2023 12:54:51 PM Exited the Edit Text Menu
+7/27/2023 12:54:54 PM Entered the Edit Text Menu
+7/27/2023 12:55:01 PM Changed the Primary Publisher from test to update test.
+7/27/2023 12:55:01 PM Exited the Edit Text Menu
+7/27/2023 12:55:04 PM Entered Edit Date Menu
+7/27/2023 12:55:09 PM Changed the Release Date from 1/1/2023 12:00:00 AM to 5/5/2023 12:00:00 AM.
+7/27/2023 12:55:09 PM Exited the Edit Date Menu
+7/27/2023 12:55:10 PM Successfully updated data for test game.
+7/27/2023 12:55:10 PM Confirmed Edits for test game.
+7/27/2023 12:55:10 PM Exited the Edit Game Menu
+7/27/2023 12:55:12 PM Entered the Search For Movie Menu.
+7/27/2023 12:55:13 PM Selected test movie in search menu.
+7/27/2023 12:55:15 PM Exited Search For Movie Menu.
+7/27/2023 12:55:15 PM Entered the Edit Movie Menu with test movie.
+7/27/2023 12:55:18 PM Entered the Edit Number Menu.
+7/27/2023 12:55:22 PM Changed the Length in Minutes from 57 to 126.
+7/27/2023 12:55:22 PM Exited the Edit Number Menu
+7/27/2023 12:55:26 PM Entered the Edit Text Menu
+7/27/2023 12:55:30 PM Changed the Primary Producer from test to new test.
+7/27/2023 12:55:30 PM Exited the Edit Text Menu
+7/27/2023 12:55:31 PM Successfully updated data for test movie.
+7/27/2023 12:55:31 PM Confirmed Edits for test movie.
+7/27/2023 12:55:31 PM Exited the Edit Movie Menu
+7/27/2023 12:55:32 PM Exited the Edit Records Menu.
+7/27/2023 12:55:32 PM Exited the Edit Records Menu.
+7/27/2023 12:55:34 PM Entered the Delete Records Menu.
+7/27/2023 12:55:35 PM Entered the Search For Game Menu.
+7/27/2023 12:55:38 PM Selected test game in search menu.
+7/27/2023 12:55:39 PM Exited Search For Game Menu.
+7/27/2023 12:55:39 PM Selected test game for deletion.
+7/27/2023 12:55:39 PM Entered the Delete Game Menu.
+7/27/2023 12:55:41 PM Decided to delete test game.
+7/27/2023 12:55:41 PM Deleted test game from database.
+7/27/2023 12:55:41 PM Exited the Delete Game Menu.
+7/27/2023 12:55:42 PM Entered the Search For Movie Menu.
+7/27/2023 12:55:45 PM Selected test movie in search menu.
+7/27/2023 12:55:46 PM Exited Search For Movie Menu.
+7/27/2023 12:55:46 PM Selected test movie for deletion.
+7/27/2023 12:55:46 PM Entered the Delete Movie Menu.
+7/27/2023 12:55:47 PM Decided to delete test movie.
+7/27/2023 12:55:47 PM Deleted test movie from database.
+7/27/2023 12:55:48 PM Exited the Delete Movie Menu.
+7/27/2023 12:55:49 PM Exited the Delete Records Menu.
+7/27/2023 12:55:52 PM Printed the Log File.
+7/27/2023 12:56:06 PM Exited the program.

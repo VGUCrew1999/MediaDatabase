@@ -24,8 +24,8 @@ namespace MediaDatabaseTest
             game.DateAdded = DateTime.Now;
 
             //act
-            MediaDatabase.Program.AddGame(game);
-            var games = MediaDatabase.Program.GetAllGames();
+            MediaDatabase.GameLogic.AddGame(game);
+            var games = MediaDatabase.GameLogic.GetAllGames();
 
             //assert
             Assert.IsTrue(games.Contains(game));
@@ -49,8 +49,8 @@ namespace MediaDatabaseTest
             movie.DateAdded = DateTime.Now;
 
             //act
-            MediaDatabase.Program.AddMovie(movie);
-            var movies = MediaDatabase.Program.GetAllMovies();
+            MediaDatabase.MovieLogic.AddMovie(movie);
+            var movies = MediaDatabase.MovieLogic.GetAllMovies();
 
             //assert
             Assert.IsTrue(movies.Contains(movie));
@@ -65,14 +65,14 @@ namespace MediaDatabaseTest
             //arrange
             MediaDatabase.MediaContext _context = new MediaDatabase.MediaContext();
             MediaDatabase.VideoGame game = new MediaDatabase.VideoGame();
-            var games = MediaDatabase.Program.GetAllGames();
+            var games = MediaDatabase.GameLogic.GetAllGames();
             game = games.Single(g => g.GameId.ToUpper() == "UNTEST");
             game.GameName = "Edited Unit Test Game";
             game.Console = "Edit Test";
 
             //act
-            MediaDatabase.Program.ConfirmGameEdits(game);
-            games = MediaDatabase.Program.GetAllGames();    // reset to check for new values
+            MediaDatabase.GameLogic.ConfirmGameEdits(game);
+            games = MediaDatabase.GameLogic.GetAllGames();    // reset to check for new values
 
             //assert
             Assert.IsTrue(games.Contains(game));
@@ -85,7 +85,7 @@ namespace MediaDatabaseTest
         public void SecondEditMovie()
         {
             //arrange
-            var movies = MediaDatabase.Program.GetAllMovies();
+            var movies = MediaDatabase.MovieLogic.GetAllMovies();
             MediaDatabase.Movie movie = new MediaDatabase.Movie();
             movie = movies.Single(m => m.MovieId.ToUpper() == "UNTMOV");
 
@@ -93,8 +93,8 @@ namespace MediaDatabaseTest
             movie.MovieName = "Edited Unit Test Movie";
             movie.Director = "Edit Test";
             movie.Producer = "Unit Test";
-            MediaDatabase.Program.ConfirmMovieEdits(movie);
-            movies = MediaDatabase.Program.GetAllMovies();  // reset to check for new values
+            MediaDatabase.MovieLogic.ConfirmMovieEdits(movie);
+            movies = MediaDatabase.MovieLogic.GetAllMovies();  // reset to check for new values
 
             //assert
             Assert.IsTrue(movies.Contains(movie));  
@@ -109,14 +109,14 @@ namespace MediaDatabaseTest
             //arrange
             MediaDatabase.MediaContext _context = new MediaDatabase.MediaContext();
             MediaDatabase.VideoGame game = new MediaDatabase.VideoGame();
-            var games = MediaDatabase.Program.GetAllGames();
+            var games = MediaDatabase.GameLogic.GetAllGames();
             game = games.Single(g => g.GameId.ToUpper() == "UNTEST");
             game.GameName = "Edited Unit Test Game";
             game.Console = "Edit Test";
 
             //act
-            MediaDatabase.Program.ConfirmDeleteGame(game);
-            games = MediaDatabase.Program.GetAllGames();    // reset to check for new values
+            MediaDatabase.GameLogic.ConfirmDeleteGame(game);
+            games = MediaDatabase.GameLogic.GetAllGames();    // reset to check for new values
 
             //assert
             Assert.IsFalse(games.Contains(game));
@@ -128,13 +128,13 @@ namespace MediaDatabaseTest
         [TestProperty("ExecutionOrder", "6")]
         public void ThirdDeleteMovie() {
             //arrange
-            var movies = MediaDatabase.Program.GetAllMovies();
+            var movies = MediaDatabase.MovieLogic.GetAllMovies();
             MediaDatabase.Movie movie = new MediaDatabase.Movie();
             movie = movies.Single(m => m.MovieId.ToUpper() == "UNTMOV");
 
             //act
-            MediaDatabase.Program.ConfirmDeleteMovie(movie);
-            movies = MediaDatabase.Program.GetAllMovies();  // reset to check for new values
+            MediaDatabase.MovieLogic.ConfirmDeleteMovie(movie);
+            movies = MediaDatabase.MovieLogic.GetAllMovies();  // reset to check for new values
 
             //assert
             Assert.IsFalse(movies.Contains(movie));
