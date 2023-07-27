@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -161,10 +162,10 @@ namespace MediaDatabase
             return selectedMovie;
         }
 
-        //get everything
+        //get everything - converts a raw sql query result to a list
         public static List<Movie> GetAllMovies()
         {
-            var movies = _context.Movies.ToList();
+            var movies = _context.Movies.FromSql($"SELECT * FROM Movies").ToList();
             return movies;
         }
 

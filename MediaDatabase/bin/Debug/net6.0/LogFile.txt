@@ -445,3 +445,8 @@
 7/27/2023 12:55:49 PM Exited the Delete Records Menu.
 7/27/2023 12:55:52 PM Printed the Log File.
 7/27/2023 12:56:06 PM Exited the program.
+7/27/2023 1:08:40 PM Started the program.
+7/27/2023 1:08:43 PM Entered the Search Records Menu.
+7/27/2023 1:08:46 PM Printed all movies.
+7/27/2023 1:08:50 PM Exited the Search Records Menu.
+7/27/2023 1:08:51 PM Exited the program.
